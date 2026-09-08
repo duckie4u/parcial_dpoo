@@ -10,5 +10,5 @@ public abstract class Persona {
 		this.altura = altura_cm;
 		this.edad = edad_anios;
 	}
-	public abstract double calcularTBM (float peso, float altura, int edad);
+	public abstract float calcularTBM (float peso, float altura, int edad);
 }
