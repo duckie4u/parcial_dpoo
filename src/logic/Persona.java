@@ -10,5 +10,5 @@ public abstract class Persona {
 		this.altura = altura_cm;
 		this.edad = edad_anios;
 	}
-	public abstract float calcularTBM (double peso, double altura, int edad) throws EdadOutOfRange, AltruraOutOfRange, PesoOutOfRange;
+	public abstract double calcularTBM (double peso, double altura, int edad) throws EdadOutOfRange, AltruraOutOfRange, PesoOutOfRange;
 }

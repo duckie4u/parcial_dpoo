@@ -6,7 +6,7 @@ public class Mujer extends Persona {
 	}
 
 	@Override
-	public float calcularTBM(double peso, double altura, int edad)
+	public double calcularTBM(double peso, double altura, int edad)
 			throws EdadOutOfRange, AltruraOutOfRange, PesoOutOfRange {
 		if (peso < 40.0 || peso > 110.0) {
 			throw new PesoOutOfRange("Error: PesoOutOfRange");
@@ -18,7 +18,7 @@ public class Mujer extends Persona {
 			throw new EdadOutOfRange("Error: EdadOutOfRange");
 		}
 		
-		float tbm  = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.33 * edad);
+		double tbm  = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.33 * edad);
 		return tbm;
 			
 	}
