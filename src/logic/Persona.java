@@ -25,5 +25,5 @@ public abstract class Persona {
 	
 	// no hay setters porque la persona se crea en el constructor
 	
-	public abstract double calcularTBM (double peso, double altura, int edad) throws EdadOutOfRange, AlturaOutOfRange, PesoOutOfRange;
+	public abstract double calcularTBM () throws EdadOutOfRange, AlturaOutOfRange, PesoOutOfRange;
 }

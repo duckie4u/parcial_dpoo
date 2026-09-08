@@ -6,19 +6,19 @@ public class Mujer extends Persona {
 	}
 
 	@Override
-	public double calcularTBM(double peso, double altura, int edad)
+	public double calcularTBM()
 			throws EdadOutOfRange, AlturaOutOfRange, PesoOutOfRange {
-		if (peso < 40.0 || peso > 110.0) {
+		if (this.peso < 40.0 || this.peso > 110.0) {
 			throw new PesoOutOfRange("Error: PesoOutOfRange");
 		}
-		if (altura < 160.0 || altura > 195.0) {
+		if (this.altura < 160.0 || this.altura > 195.0) {
 			throw new AlturaOutOfRange("Error: AlturaOutOfRange");
 		}
-		if (edad <= 15) {
+		if (this.edad <= 15) {
 			throw new EdadOutOfRange("Error: EdadOutOfRange");
 		}
 		
-		double tbm  = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.33 * edad);
+		double tbm  = 447.593 + (9.247 * this.peso) + (3.098 * this.altura) - (4.33 * this.edad);
 		return tbm;
 			
 	}
