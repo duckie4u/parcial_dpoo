@@ -8,10 +8,10 @@ public class Mujer extends Persona {
 	@Override
 	public double calcularTBM()
 			throws EdadOutOfRange, AlturaOutOfRange, PesoOutOfRange {
-		if (this.peso < 40.0 || this.peso > 110.0) {
+		if (this.peso < 40.0 || this.peso > 80.0) {
 			throw new PesoOutOfRange("Error: PesoOutOfRange");
 		}
-		if (this.altura < 160.0 || this.altura > 195.0) {
+		if (this.altura < 140.0 || this.altura > 180.0) {
 			throw new AlturaOutOfRange("Error: AlturaOutOfRange");
 		}
 		if (this.edad <= 15) {
