@@ -11,6 +11,8 @@ public class Principal {
 	
 	
 	public void principal () {
+		// Hombres: 60 <= peso <= 110; 160 <= altura <= 195; edad > 15
+		// Mujeres: 40 <= peso <= 80; 140 <= altura <= 180; edad > 15
 		Mujer persona1 = new Mujer(38.0, 160.5, 17); // prueba peso
 		System.out.println("Altura Persona 1: " + persona1.getPeso());
 		
